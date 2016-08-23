@@ -1,0 +1,199 @@
+Codebook for the tidy dataset
+
+==============================================================================================
+For Tidy.txt:
+
+    Test and train data is merged for subject and activity
+    Features are applied for column naming
+    Activity labels are applied to the activity column
+    Data set is aggregated by subject and by activity by calculating the mean
+    File written as Tidy.txt
+===============================================================================================
+	
+Subject and Activity
+
+These variables identify the unique subject/activity pair the variables relate to:
+
+    Subject: the integer subject ID.
+    Activity: the string activity name:
+        Walking
+        Walking Upstairs
+        Walking Downstairs
+        Sitting
+        Standing
+        Laying
+These are factor variables.
+
+==================================================================================================
+Measurement Means
+
+All variables are the mean of a measurement for each subject and activity. This is indicated by the initial Mean in the variable name. All values are numeric type.
+
+All the old variable names renamed as below:
+
+column names having "Acc" replaced with "Accelerometer"
+column names having "Gyro" replaced with "Gyroscope"
+column names having "BodyBody" replaced with "Body"
+column names having "Mag" replaced with "Magnitude"
+column names having "^t" replaced with "Time"
+column names having "^f" replaced with "Frequency"
+column names having "tBody" replaced with "TimeBody"
+column names having "-mean()" replaced with "Mean"
+column names having "-std()" replaced with "STD"
+column names having "-freq()" replaced with"Frequency"
+column names having "angle" replaced with "Angle"
+column names having "gravity" replaced with "Gravity"
+
+=====================================================================================================
+Time domain body acceleration mean along X, Y, and Z:
+	
+  TimeBodyAccelerometerMean()-X                  
+  TimeBodyAccelerometerMean()-Y                  
+  TimeBodyAccelerometerMean()-Z     
+
+Time domain body acceleration standard deviation along X, Y, and Z:
+  
+ TimeBodyAccelerometerSTD()-X                   
+ TimeBodyAccelerometerSTD()-Y                    
+ TimeBodyAccelerometerSTD()-Z      
+
+Time domain gravity acceleration mean along X, Y, and Z: 
+
+  TimeGravityAccelerometerMean()-X              
+  TimeGravityAccelerometerMean()-Y                 
+  TimeGravityAccelerometerMean()-Z
+
+Time domain gravity acceleration standard deviation along X, Y, and Z:
+  
+  TimeGravityAccelerometerSTD()-X               
+  TimeGravityAccelerometerSTD()-Y                  
+  TimeGravityAccelerometerSTD()-Z
+
+Time domain body jerk mean along X, Y, and Z: 
+  
+  TimeBodyAccelerometerJerkMean()-X               
+  TimeBodyAccelerometerJerkMean()-Y             
+  TimeBodyAccelerometerJerkMean()-Z
+
+Time domain body jerk standard deviation along X, Y, and Z:
+
+  
+  TimeBodyAccelerometerJerkSTD()-X                
+  TimeBodyAccelerometerJerkSTD()-Y               
+  TimeBodyAccelerometerJerkSTD()-Z
+
+Time domain gyroscope mean along X, Y, and Z:
+  
+  TimeBodyGyroscopeMean()-X                     
+  TimeBodyGyroscopeMean()-Y                     
+  TimeBodyGyroscopeMean()-Z
+
+Time domain gyroscope standard deviation along X, Y, and Z:                     
+  TimeBodyGyroscopeSTD()-X                       
+  TimeBodyGyroscopeSTD()-Y                        
+  TimeBodyGyroscopeSTD()-Z  
+
+Time domain gyroscope jerk mean along X, Y, and Z:                      
+  TimeBodyGyroscopeJerkMean()-X                   
+  TimeBodyGyroscopeJerkMean()-Y                    
+  TimeBodyGyroscopeJerkMean()-Z 
+
+Time domain gyroscope jerk standard deviation along X, Y, and Z:                   
+  TimeBodyGyroscopeJerkSTD()-X"                     
+  TimeBodyGyroscopeJerkSTD()-Y"                     
+  TimeBodyGyroscopeJerkSTD()-Z"   
+
+Time domain body acceleration magnitude mean:                  
+  TimeBodyAccelerometerMagnitudeMean()     
+
+Time domain body acceleration magnitude standard deviation:       
+  TimeBodyAccelerometerMagnitudeSTD()    
+
+Time domain gravity acceleration magnitude mean:         
+  TimeGravityAccelerometerMagnitudeMean()  
+
+Time domain gravity acceleration magnitude standard deviation:      
+  TimeGravityAccelerometerMagnitudeSTD()          
+
+Time domain body jerk magnitude mean:
+  TimeBodyAccelerometerJerkMagnitudeMean()   
+
+Time domain body jerk magnitude standard deviation:      
+  TimeBodyAccelerometerJerkMagnitudeSTD() 
+
+Time domain gyroscope magnitude mean:       
+  TimeBodyGyroscopeMagnitudeMean()     
+
+Time domain gyroscope magnitude standard deviation:            
+  TimeBodyGyroscopeMagnitudeSTD()   
+
+Time domain gyroscope jerk magnitude mean:               
+  TimeBodyGyroscopeJerkMagnitudeMean()
+
+Time domain gyroscope jerk magnitude standard deviation:             
+  TimeBodyGyroscopeJerkMagnitudeSTD()  
+
+Frequency domain body acceleration mean along X, Y, and Z:           
+   FrequencyBodyAccelerometerMean()-X              
+   FrequencyBodyAccelerometerMean()-Y              
+   FrequencyBodyAccelerometerMean()-Z  
+
+Frequency domain body acceleration standard deviation along X, Y, and Z:            
+   FrequencyBodyAccelerometerSTD()-X              
+   FrequencyBodyAccelerometerSTD()-Y              
+   FrequencyBodyAccelerometerSTD()-Z   
+
+Frequency domain body acceleration mean along X, Y, and Z:             
+  FrequencyBodyAccelerometerMeanFreq()-X           
+  FrequencyBodyAccelerometerMeanFreq()-Y          
+  FrequencyBodyAccelerometerMeanFreq()-Z  
+
+Frequency domain body jerk mean along X, Y, and Z:        
+  FrequencyBodyAccelerometerJerkMean()-X         
+  FrequencyBodyAccelerometerJerkMean()-Y          
+  FrequencyBodyAccelerometerJerkMean()-Z  
+
+Frequency domain body jerk standard deviation along X, Y, and Z:        
+  FrequencyBodyAccelerometerJerkSTD()-X         
+  FrequencyBodyAccelerometerJerkSTD()-Y          
+  FrequencyBodyAccelerometerJerkSTD()-Z
+
+Frequency domain body acceleration jerk mean along X, Y, and Z:             
+   FrequencyBodyAccelerometerJerkMeanFreq()-X     
+   FrequencyBodyAccelerometerJerkMeanFreq()-Y      
+   FrequencyBodyAccelerometerJerkMeanFreq()-Z 
+
+Frequency domain gyroscope mean along X, Y, and Z:     
+   FrequencyBodyGyroscopeMean()-X                   
+   FrequencyBodyGyroscopeMean()-Y                  
+   FrequencyBodyGyroscopeMean()-Z  
+
+Frequency domain gyroscope standard deviation along X, Y, and Z:                
+   FrequencyBodyGyroscopeSTD()-X                 
+   FrequencyBodyGyroscopeSTD()-Y                   
+   FrequencyBodyGyroscopeSTD()-Z          
+
+other variables are:   
+   FrequencyBodyGyroscopeMeanFreq()-X             
+   FrequencyBodyGyroscopeMeanFreq()-Y              
+   FrequencyBodyGyroscopeMeanFreq()-Z               
+   FrequencyBodyAccelerometerMagnitudeMean()     
+   FrequencyBodyAccelerometerMagnitudeSTD()        
+   FrequencyBodyAccelerometerMagnitudeMeanFreq()   
+   FrequencyBodyAccelerometerJerkMagnitudeMean()   
+   FrequencyBodyAccelerometerJerkMagnitudeSTD()   
+   FrequencyBodyAccelerometerJerkMagnitudeMeanFreq()
+   FrequencyBodyGyroscopeMagnitudeMean()          
+   FrequencyBodyGyroscopeMagnitudeSTD()           
+   FrequencyBodyGyroscopeMagnitudeMeanFreq()        
+   FrequencyBodyGyroscopeJerkMagnitudeMean()       
+   FrequencyBodyGyroscopeJerkMagnitudeSTD()        
+   FrequencyBodyGyroscopeJerkMagnitudeMeanFreq()   
+
+   Angle(TimeBodyAccelerometerMean,Gravity)      
+   Angle(TimeBodyAccelerometerJerkMean),GravityMean)
+   Angle(TimeBodyGyroscopeMean,GravityMean)       
+   Angle(TimeBodyGyroscopeJerkMean,GravityMean)     
+   Angle(X,GravityMean)                            
+   Angle(Y,GravityMean)                            
+   Angle(Z,GravityMean)  
